@@ -1,0 +1,56 @@
+ion-menu-button {
+  color: var(--ion-color-primary);
+}
+.swipe-slide-active {
+  transform: scale(1.05, 1.05);
+
+  ion-card {
+    img {
+      transform: scale(1, 1);
+    }
+  }
+}
+.swiper-slide {
+  transition: .4s all ease-in-out;
+}
+
+ion-card {
+   width: 100%;
+   height: 170px;
+   box-shadow: none;
+   margin: 0;
+   border-radius: 12px;   
+
+   img {
+    object-fit: cover;
+    width: 100%;
+    transform: scale(1.1, 1.1) rotate(1deg);
+    transition: .6s all ease-in-out;
+   }
+}
+.hotgameslide ion-card {
+  width: 100%;
+  height: 150px;
+}
+.gamename {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-weight: 500;
+}
+.hotgameslide .gamename {
+  font-size: 16px;
+}
+//  .bg-color {
+//    --ion-background-color: linear-gradient(135deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);  
+//  }
+ion-item {
+  --background: none;
+}
+ .sectitle {    
+    font-weight: 500;
+    color: #fff;
+ }
+ ion-button {
+   color: #000;
+ }

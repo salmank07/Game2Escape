@@ -1,0 +1,39 @@
+<ion-content>
+  <ion-label>
+    <h1 style="padding: 7% 0 6% 5%; font-weight: 600; font-size: 30px;">
+      Account
+    </h1>
+  </ion-label>
+  <ion-item lines="none"> 
+    <ion-avatar slot="start">
+      <img src="/assets/images/bg3.jpg">
+    </ion-avatar>
+    <ion-label>
+      Welcome! <span class="spcltext" style="color: aquamarine;">User</span>
+    </ion-label>
+  </ion-item>
+  <ion-item button (click)="buttonClick()" detail>
+    <ion-icon name="person-circle-outline"></ion-icon>
+    <ion-label>
+      My Profile
+    </ion-label>
+  </ion-item>
+  <ion-item button (click)="buttonClick()" detail>
+    <ion-icon name="briefcase-outline"></ion-icon>
+    <ion-label>
+      My Subscription
+    </ion-label>
+  </ion-item>
+  <ion-item button (click)="buttonClick()" detail>
+    <ion-icon name="checkmark-done-outline"></ion-icon>
+    <ion-label>
+      My plan
+    </ion-label>
+  </ion-item>
+  <ion-item button (click)="buttonClick()" detail>
+    <ion-icon name="exit-outline"></ion-icon>
+    <ion-label>
+      Sign Out
+    </ion-label>
+  </ion-item>
+</ion-content>

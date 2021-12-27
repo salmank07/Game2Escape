@@ -1,0 +1,150 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">Game2Escape</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-color">
+  <ion-item lines="none">
+    <h3 item-start class="sectitle">New Games</h3>
+    <ion-buttons slot="end">
+      <ion-button style="float: right;">See All</ion-button>
+    </ion-buttons>
+  </ion-item>
+  <!-- *ngFor="let s of slidedata; let i = index" -->
+  <!-- <ion-item lines="none"> -->
+
+  <ion-slides>
+    <ng-template let-s ngFor [ngForOf]="slidedata">
+    <ion-slide>
+      <ion-card>
+        <img [src]="s.url">
+      </ion-card>
+      <h4 class="gamename">{{s.title}}</h4>      
+    </ion-slide>
+  </ng-template>
+  </ion-slides>
+
+
+  <!-- <ion-slide>
+        <ion-card>
+          <img src="../../assets/images/bg7.jpg">
+        </ion-card>
+        <h4 class="gamename">gameName</h4>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="../../assets/images/bg3.jpg">
+        </ion-card>
+        <h4 class="gamename">gameName</h4>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="../../assets/images/bg4.jpg">
+        </ion-card>
+        <h4 class="gamename">gameName</h4>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="../../assets/images/bg5.jpg">
+        </ion-card>
+        <h4 class="gamename">gameName</h4>
+      </ion-slide> -->
+  <!-- </ion-slides> -->
+  <!-- </ion-item> -->
+
+  <ion-item lines="none">
+    <h3 class="sectitle">Best Champions</h3>
+    <ion-buttons slot="end">
+      <ion-button style="float: right;">See All</ion-button>
+    </ion-buttons>
+  </ion-item>
+  <!-- <ion-item lines="none"> -->
+  <ion-slides [options]="slideOpt1" class="slider2">
+    <ion-slide *ngFor="let s of slidedata">
+      <img style="border-radius: 100%;" src="{{ s.url }}">
+    </ion-slide>
+    <!-- <ion-slide>
+      <img style="border-radius: 100%;" src="../../assets/images/bg3.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img style="border-radius: 100%;" src="../../assets/images/bg3.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img style="border-radius: 100%;" src="../../assets/images/bg3.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img style="border-radius: 100%;" src="../../assets/images/bg3.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img style="border-radius: 100%;" src="../../assets/images/bg3.jpg">
+    </ion-slide> -->
+  </ion-slides>
+  <!-- </ion-item> -->
+  <ion-item lines="none">
+    <h3 class="sectitle">Today's Games</h3>
+    <ion-buttons slot="end">
+      <ion-button style="float: right;">See All</ion-button>
+    </ion-buttons>
+  </ion-item>
+  <!-- <ion-item lines="none"> -->
+  <ion-card>
+    <img src="../../assets/images/bg3.jpg">
+  </ion-card>
+  <!-- </ion-item> -->
+  <ion-item lines="none">
+    <h3 class="sectitle">Hot Games</h3>
+    <ion-buttons slot="end">
+      <ion-button Router-Link="seeall1">See All</ion-button>
+    </ion-buttons>
+  </ion-item>
+  <!-- <ion-item lines="none"> -->
+  <ion-slides [options]="slideOpt2" class="hotgameslide">
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/images/bg11.jpg">
+      </ion-card>
+      <h4 class="gamename">gameName</h4>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/images/bg7.jpg">
+      </ion-card>
+      <h4 class="gamename">gameName</h4>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/images/bg3.jpg">
+      </ion-card>
+      <h4 class="gamename">gameName</h4>"
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/images/bg4.jpg">
+      </ion-card>
+      <h4 class="gamename">gameName</h4>"
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/images/bg5.jpg">
+      </ion-card>
+      <h4 class="gamename">gameName</h4>
+    </ion-slide>
+  </ion-slides>
+  <!-- </ion-item> -->
+  <!-- <app-fullview1></app-fullview1> -->
+  <!-- <app-fullview2></app-fullview2> -->
+  <!-- <app-myprofile></app-myprofile> -->
+  <!-- <app-subscription></app-subscription> -->
+  <!-- <app-myplan></app-myplan> -->
+  <!-- <app-fullview3></app-fullview3> -->
+  <!-- <app-leaderb></app-leaderb> -->
+  <!-- <app-searchscreen></app-searchscreen> -->
+</ion-content>

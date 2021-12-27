@@ -1,0 +1,75 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Noto+Sans:wght@700&family=Open+Sans:wght@300&family=Poppins&family=Roboto:wght@100&family=Teko:wght@600&display=swap');
+
+ * {
+    // --ion-background-color: linear-gradient(135deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);      
+    // --ion-background-color: #FF5F6D;  /* fallback for old browsers */
+    // --ion-background-color: -webkit-linear-gradient(135deg, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    // --ion-background-color: linear-gradient(135deg, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    // --ion-background-color: #780206;  /* fallback for old browsers */
+    // --ion-background-color: -webkit-linear-gradient(120deg, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+    // --ion-background-color: linear-gradient(120deg, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    // --ion-background-color: #2C3E50;  /* fallback for old browsers */
+    // --ion-background-color: -webkit-linear-gradient(140deg, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    // --ion-background-color: linear-gradient(140deg, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    // --ion-background-color: #000046;  /* fallback for old browsers */
+    //  --ion-background-color: -webkit-linear-gradient(130deg, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    //  --ion-background-color: linear-gradient(130deg, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    // --ion-background-color: #000428;  /* fallback for old browsers */
+    // --ion-background-color: -webkit-linear-gradient(130deg, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    // --ion-background-color: linear-gradient(130deg, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    // --ion-background-color: linear-gradient( 120deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+
+    --ion-background-color: linear-gradient( 111.1deg,  rgba(0,40,70,1) -4.8%, rgba(255,115,115,1) 82.7%, rgba(255,175,123,1) 97.2% );
+
+
+
+
+
+
+    color: #fff;
+ }
+ ion-item {
+    --background: none;
+  }
+ion-icon {
+    color: black;
+}
+ion-tab-bar {
+    --background: none;
+}
+ion-toolbar {
+    --background: none;
+}
